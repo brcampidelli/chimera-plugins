@@ -47,9 +47,9 @@ O comando `chimera plugin` existe a partir do Chimera 0.69.0.
 | `plugins/` | nossos plugins (Apache-2.0): `whatsapp-cloud`, `github`, `playwright`, `hostinger` |
 | `vendor/` | cópias de plugins permissivos, com `LICENSE` e `UPSTREAM.json` (repo, caminho, commit, licença, data); `MODIFICATIONS.md` quando algo mudou |
 | `ports/` | plugins de Codex e Cursor portados para o formato do Claude Code, com `PORT.md` dizendo o que mudou |
-| `catalog/` | vitrine: categoria (as 26 de `categories.yaml`), até 3 secundárias, tags, destaque, o que executa, estrelas com data |
+| `catalog/` | vitrine: categoria (as 27 de `categories.yaml`), até 3 secundárias, tags, destaque, o que executa, estrelas com data |
 | `reviews/` | uma revisão por item: quem, qual commit, quando, e o checklist de segurança |
-| `categories.yaml` | as 26 categorias canônicas, iguais nos catálogos de plugins, skills e conectores |
+| `categories.yaml` | as 27 categorias canônicas, iguais nos catálogos de plugins, skills e conectores |
 | `scripts/check.py` | a verificação que o CI roda (só biblioteca padrão; não executa nada dos plugins) |
 
 Lista completa, com licença, origem e categoria: `.claude-plugin/marketplace.json` e `catalog/`.

@@ -9,7 +9,7 @@ What it enforces (CONTRIBUTING.md explains each rule):
    reviewed, and for a github entry that sha equals the marketplace sha.
 3. Every folder under ``vendor/`` and ``ports/`` has ``UPSTREAM.json`` (repo, path, sha, license,
    copied_at), a license file, an SPDX id on the allowlist, and a line in ``NOTICE``.
-4. Catalog files use the 26 canonical category ids from ``categories.yaml`` (shared with the
+4. Catalog files use the 27 canonical category ids from ``categories.yaml`` (shared with the
    skills and connectors catalogs), at most 3 secondary categories, and GitHub stars only
    with the date they were read.
 5. Text files carry no ``curl | sh``, no unpinned ``npm -g`` / ``npx``, no ``@latest``, and no
@@ -216,7 +216,7 @@ CATEGORY_LINE = re.compile(r"^\s*-\s*\{\s*id:\s*([a-z0-9-]+)\s*,", re.M)
 
 
 def check_categories(report: Report) -> set[str]:
-    """The 26 canonical ids, from categories.yaml — the same file the skills and connectors
+    """The 27 canonical ids, from categories.yaml — the same file the skills and connectors
     catalogs carry, so the app filters all three together. Parsed with a regex (stdlib only); the
     file's format is one ``- {id: x, pt: "..."}`` per line."""
     path = ROOT / "categories.yaml"
@@ -227,8 +227,8 @@ def check_categories(report: Report) -> set[str]:
     ids = set(found)
     if len(found) != len(ids):
         report.error("categories.yaml: duplicate id")
-    if len(ids) != 26:
-        report.error(f"categories.yaml: expected the 26 canonical categories, found {len(ids)}")
+    if len(ids) != 27:
+        report.error(f"categories.yaml: expected the 27 canonical categories, found {len(ids)}")
     return ids
 
 
@@ -312,7 +312,7 @@ def check_catalog(name: str, entry: dict, categories: set[str], report: Report) 
         report.error(f"{where}: 'id' must be {name!r}")
     primary = data.get("category")
     if primary not in categories:
-        report.error(f"{where}: category {primary!r} is not one of the 26 ids")
+        report.error(f"{where}: category {primary!r} is not one of the 27 ids")
     secondary = data.get("secondary", [])
     if not isinstance(secondary, list) or len(secondary) > 3:
         report.error(f"{where}: 'secondary' is a list of at most 3 ids")
