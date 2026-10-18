@@ -1,6 +1,7 @@
 # Review: superpowers
 
-Reviewer: Claude Opus 5.5 (agent), preparing for Bruno Campidelli — human sign-off pending before publication
+Reviewer: Claude Opus 5.5 (AI agent) — not a human review
+Human sign-off: pending (no maintainer has signed this review yet)
 Date: 2026-10-17
 Reviewed sha: `bb92a77741419a4ab5f06e711a283343f1ada0c3`
 Source: github `obra/superpowers` at `bb92a77741419a4ab5f06e711a283343f1ada0c3` (not copied here)
@@ -15,7 +16,7 @@ License: MIT
 - [x] **MCP servers** — none.
 - [x] **Secrets** — none.
 - [x] **Text read** — Manifest, `hooks/` (SessionStart hook injects the `using-superpowers` skill), read in full; the 15 SKILL.md scanned and spot-read; scripts scanned (brainstorming visual companion server, test helpers).
-- [x] **Supply chain and reader-directed text** (`scripts/check.py` rules) — 1 finding: root `AGENTS.md` opens with 'If You Are an AI Agent' — contributor guidance asking agents not to open low-quality PRs to that repo. Benign and not a plugin component (Chimera does not load a plugin's AGENTS.md).
+- [x] **Supply chain and reader-directed text** (`scripts/check.py` rules) — Not scanned by this repo's CI (the source is a pinned commit in another repository). Findings at the pinned sha (`scripts/check.py --scan` on a checkout): 1: root `AGENTS.md` opens with 'If You Are an AI Agent' — contributor guidance asking agents not to open low-quality PRs to that repo. Benign and not a plugin component (Chimera does not load a plugin's AGENTS.md).
 - [x] **Irreversible actions** — Skills push toward subagent-driven development and git worktrees; commits/pushes still go through approval.
 
 ## Re-review

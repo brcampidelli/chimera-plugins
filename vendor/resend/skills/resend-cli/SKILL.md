@@ -78,10 +78,7 @@ resend --version
 
 If the command is not found, install it using one of the methods below. Prefer a package manager when available:
 
-**Node.js:**
-```bash
-npm install -g resend-cli
-```
+**Node.js:** follow https://resend.com/docs/cli and pin the version you install.
 
 **Homebrew (macOS / Linux):**
 ```bash

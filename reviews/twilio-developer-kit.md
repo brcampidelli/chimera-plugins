@@ -1,6 +1,7 @@
 # Review: twilio-developer-kit
 
-Reviewer: Claude Opus 5.5 (agent), preparing for Bruno Campidelli — human sign-off pending before publication
+Reviewer: Claude Opus 5.5 (AI agent) — not a human review
+Human sign-off: pending (no maintainer has signed this review yet)
 Date: 2026-10-17
 Reviewed sha: `8aba46fb65dc8d9a20f4b301a68352064b4159a5`
 Source: github `twilio/ai` at `8aba46fb65dc8d9a20f4b301a68352064b4159a5` (not copied here)
@@ -15,7 +16,7 @@ License: MIT
 - [x] **MCP servers** — twilio-docs — `https://mcp.twilio.com/docs` (Twilio's domain, documentation search only).
 - [x] **Secrets** — Skills reference `TWILIO_ACCOUNT_SID` / `TWILIO_AUTH_TOKEN` by name only.
 - [x] **Text read** — Manifest and `mcp.json` read; the 57 skills (twilio/ and sendgrid/) scanned and spot-read (WhatsApp senders, messaging, verify).
-- [x] **Supply chain and reader-directed text** (`scripts/check.py` rules) — 4 findings: `npm install -g twilio-cli` / `ngrok` without version, `@latest` in the CLI reference. No `curl | sh`, no reader-directed text.
+- [x] **Supply chain and reader-directed text** (`scripts/check.py` rules) — Not scanned by this repo's CI (the source is a pinned commit in another repository). Findings at the pinned sha (`scripts/check.py --scan` on a checkout): 4: `npm install -g twilio-cli` / `ngrok` without version, `@latest` in the CLI reference. No `curl | sh`, no reader-directed text.
 - [x] **Irreversible actions** — **Sends SMS/WhatsApp/calls that cost money and reach real people** when the agent runs the CLI or SDK; approval applies; never from bots/cron.
 
 ## Re-review

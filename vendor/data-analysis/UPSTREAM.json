@@ -7,7 +7,8 @@
   "copied_at": "2026-10-17",
   "modified": true,
   "changes": [
-    ".mcp.json: removed servers whose 'url' is an empty string (Chimera and Claude Code refuse a server with neither command nor url)"
+    ".mcp.json: removed servers whose 'url' is an empty string (Chimera and Claude Code refuse a server with neither command nor url)",
+    ".claude-plugin/plugin.json: name 'data' renamed to 'data-analysis' (the generic name collides with Anthropic's own 'data' plugin when both marketplaces are added); folder renamed to match"
   ],
   "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
 }

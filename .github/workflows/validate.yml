@@ -31,7 +31,8 @@ jobs:
         run: python -I scripts/check.py
 
       - name: Install Chimera (pinned)
-        # 0.69.0 is the first release with `chimera plugin validate`.
+        # 0.69.0 is the first release with `chimera plugin validate`. Kept pinned on purpose:
+        # this workflow is pushed only after 0.69.0 is on PyPI.
         run: python -m pip install --disable-pip-version-check "chimera-agent==0.69.0"
 
       - name: chimera plugin validate (marketplace and every plugin folder)

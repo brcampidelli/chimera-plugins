@@ -1,6 +1,7 @@
 # Review: stripe
 
-Reviewer: Claude Opus 5.5 (agent), preparing for Bruno Campidelli — human sign-off pending before publication
+Reviewer: Claude Opus 5.5 (AI agent) — not a human review
+Human sign-off: pending (no maintainer has signed this review yet)
 Date: 2026-10-17
 Reviewed sha: `c1f5b0826f3f33d7e1cc7eff5e5e6cd42749808b`
 Source: `./vendor/stripe` — copy of `stripe/ai` / `providers/claude/plugin` at `c1f5b0826f3f33d7e1cc7eff5e5e6cd42749808b`
@@ -15,7 +16,7 @@ License: MIT
 - [x] **MCP servers** — stripe — `https://mcp.stripe.com` (Stripe's domain, OAuth).
 - [x] **Secrets** — none in files.
 - [x] **Text read** — Manifest, `.mcp.json` and `hooks/hooks.json` read in full; agent, commands and SKILL.md files scanned and spot-read; the `.mjs` hook scripts grepped for network/subprocess use: they call the local `stripe` CLI (`spawnSync`) to check install/login and to report skill usage to Stripe through the CLI (telemetry). References scanned.
-- [x] **Supply chain and reader-directed text** (`scripts/check.py` rules) — 3 findings, acknowledged: `npm i -g @stripe/cli` (unversioned) in `skills/stripe-best-practices/SKILL.md` and in a hook message; `@stripe/cli@latest` in a hook message. **Open question:** PLANO §1 says unpinned `npm -g` enters only rewritten — the owner decides whether to rewrite that one SKILL.md line.
+- [x] **Supply chain and reader-directed text** (`scripts/check.py` rules) — Upstream had `npm i -g @stripe/cli` in `skills/stripe-best-practices/SKILL.md` and two hook messages with `npm i -g @stripe/cli` / `@stripe/cli@latest` — **all rewritten** to a link to https://docs.stripe.com/stripe-cli (see MODIFICATIONS.md). Clean after the change. Not verified: `skills/stripe-directory/SKILL.md` sends the user to `https://stripe.directory`; who owns that domain was not checked against a Stripe primary source — confirm before publishing.
 - [x] **Irreversible actions** — **Money.** The Stripe MCP server can create customers, prices, payment links and refunds. Every write needs approval; never from bots/cron. Prefer a restricted key / test mode.
 
 ## Re-review

@@ -9,7 +9,7 @@ keeps the upstream license text in its folder, an UPSTREAM.json with the exact s
 when anything was changed, a MODIFICATIONS.md or PORT.md describing the change. The upstream
 license governs those files; the Apache-2.0 license of this repository does not replace it.
 
-Entries in .claude-plugin/marketplace.json whose source is a pinned GitHub commit (vercel, sentry,
+Entries in .claude-plugin/marketplace.json whose source is a pinned GitHub commit (sentry,
 twilio-developer-kit, superpowers) are not copied here; they are fetched from their own
 repositories at the listed commit and remain under their own licenses.
 
@@ -33,7 +33,7 @@ vendor/skill-creator
   License: Apache-2.0 (text in vendor/skill-creator/LICENSE)
 
 vendor/mcp-server-dev
-  copied unmodified from https://github.com/anthropics/claude-plugins-official/tree/ea10b213686c90bb1984b2016937310e05336cf3/plugins/mcp-server-dev
+  copied with modifications from https://github.com/anthropics/claude-plugins-official/tree/ea10b213686c90bb1984b2016937310e05336cf3/plugins/mcp-server-dev
   License: Apache-2.0 (text in vendor/mcp-server-dev/LICENSE)
 
 vendor/customer-support
@@ -48,16 +48,16 @@ vendor/product-management
   copied with modifications from https://github.com/anthropics/knowledge-work-plugins/tree/33eeda1e8fd856455b05479d13a0f85b5f803744/product-management
   License: Apache-2.0 (text in vendor/product-management/LICENSE)
 
-vendor/data
+vendor/data-analysis
   copied with modifications from https://github.com/anthropics/knowledge-work-plugins/tree/33eeda1e8fd856455b05479d13a0f85b5f803744/data
-  License: Apache-2.0 (text in vendor/data/LICENSE)
+  License: Apache-2.0 (text in vendor/data-analysis/LICENSE)
 
 vendor/stripe
-  copied unmodified from https://github.com/stripe/ai/tree/c1f5b0826f3f33d7e1cc7eff5e5e6cd42749808b/providers/claude/plugin
+  copied with modifications from https://github.com/stripe/ai/tree/c1f5b0826f3f33d7e1cc7eff5e5e6cd42749808b/providers/claude/plugin
   License: MIT (text in vendor/stripe/LICENSE)
 
 vendor/mercadopago
-  copied unmodified from https://github.com/mercadopago/mercadopago-claude-marketplace/tree/9815b7fe3769783ddafce0745d113351c8e69ab0/plugins/mercadopago
+  copied with modifications from https://github.com/mercadopago/mercadopago-claude-marketplace/tree/9815b7fe3769783ddafce0745d113351c8e69ab0/plugins/mercadopago
   License: Apache-2.0 (text in vendor/mercadopago/LICENSE)
 
 vendor/resend

@@ -8,7 +8,7 @@ Multi-step recipes for common Resend CLI tasks.
 
 ```bash
 # Install (pick one)
-npm install -g resend-cli                          # npm
+# npm: see https://resend.com/docs/cli for the install command; pin the version
 brew install resend/cli/resend                     # Homebrew (macOS / Linux)
 # Other install methods: https://resend.com/docs/cli
 
@@ -357,7 +357,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install Resend CLI
-        run: npm install -g resend-cli
+        # pin the CLI version; install options: https://resend.com/docs/cli
+        run: npm install --global "resend-cli@${RESEND_CLI_VERSION}"
 
       - name: Send deploy notification
         run: |

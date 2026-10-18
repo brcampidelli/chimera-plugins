@@ -5,7 +5,11 @@
   "tree_sha": "c37b4e224f85c4e603cc6d129139769cd9080b83",
   "license": "MIT",
   "copied_at": "2026-10-17",
-  "modified": false,
+  "modified": true,
+  "changes": [
+    "skills/stripe-best-practices/SKILL.md: `npm i -g @stripe/cli` replaced by a link to https://docs.stripe.com/stripe-cli (repository rule: no unpinned global installs)",
+    "scripts/cli.mjs: the two hook messages that suggested `npm i -g @stripe/cli` / `@stripe/cli@latest` now link to https://docs.stripe.com/stripe-cli (hooks are inert in Chimera; changed so the copy passes the same rule)"
+  ],
   "added_files": [
     "LICENSE (copied from the repository root; the plugin folder has none)"
   ],

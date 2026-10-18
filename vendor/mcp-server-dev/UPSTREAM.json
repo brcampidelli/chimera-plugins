@@ -5,6 +5,9 @@
   "tree_sha": "83df44e1b79aeac24a618b9ba030d7c2408b5180",
   "license": "Apache-2.0",
   "copied_at": "2026-10-17",
-  "modified": false,
+  "modified": true,
+  "changes": [
+    "skills/build-mcp-server/references/deploy-cloudflare-workers.md: `npm create cloudflare@latest` replaced by `npm create cloudflare@<version>` with a link to Cloudflare's C3 page (repository rule: no unpinned installs)"
+  ],
   "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
 }

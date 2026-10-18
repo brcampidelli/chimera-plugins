@@ -1,6 +1,7 @@
 # Review: customer-support
 
-Reviewer: Claude Opus 5.5 (agent), preparing for Bruno Campidelli — human sign-off pending before publication
+Reviewer: Claude Opus 5.5 (AI agent) — not a human review
+Human sign-off: pending (no maintainer has signed this review yet)
 Date: 2026-10-17
 Reviewed sha: `33eeda1e8fd856455b05479d13a0f85b5f803744`
 Source: `./vendor/customer-support` — copy of `anthropics/knowledge-work-plugins` / `customer-support` at `33eeda1e8fd856455b05479d13a0f85b5f803744`

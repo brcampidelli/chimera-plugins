@@ -1,6 +1,7 @@
 # Review: sentry
 
-Reviewer: Claude Opus 5.5 (agent), preparing for Bruno Campidelli — human sign-off pending before publication
+Reviewer: Claude Opus 5.5 (AI agent) — not a human review
+Human sign-off: pending (no maintainer has signed this review yet)
 Date: 2026-10-17
 Reviewed sha: `0d42f6a5b013580110ea55c00f699782c03a99b0`
 Source: github `getsentry/plugin-claude` at `0d42f6a5b013580110ea55c00f699782c03a99b0` (not copied here)
@@ -15,7 +16,7 @@ License: MIT
 - [x] **MCP servers** — sentry — `https://mcp.sentry.dev/mcp?utm_source=plugin` (Sentry's domain; the query string is a referral tag).
 - [x] **Secrets** — none in files.
 - [x] **Text read** — Manifest (MCP server declared inline) read in full; the 8 SKILL.md and references scanned and spot-read.
-- [x] **Supply chain and reader-directed text** (`scripts/check.py` rules) — 19 findings: 15× `@latest` in setup docs for Sentry's own wizard/CLI (`@sentry/wizard@latest`, `@sentry/cli@latest`), 4× 'conceal' — false positives (`Do not tell the user to "go check your dashboard"`). No `curl | sh`.
+- [x] **Supply chain and reader-directed text** (`scripts/check.py` rules) — Not scanned by this repo's CI (the source is a pinned commit in another repository). Findings at the pinned sha (`scripts/check.py --scan` on a checkout): 19: 15× `@latest` in setup docs for Sentry's own wizard/CLI (`@sentry/wizard@latest`, `@sentry/cli@latest`), 4× 'conceal' — false positives (`Do not tell the user to "go check your dashboard"`). No `curl | sh`.
 - [x] **Irreversible actions** — Resolving or assigning issues is a write; approval applies.
 
 ## Re-review

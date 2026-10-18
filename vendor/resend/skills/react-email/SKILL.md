@@ -30,7 +30,7 @@ npm i react-email
 Or scaffold a new project:
 
 ```sh
-npx create-email@latest
+npx create-email@<version>   # pin a release: https://react.email/docs/getting-started/automatic-setup
 cd react-email-starter
 npm install
 npm run dev
@@ -373,7 +373,7 @@ React Email handles the structural defaults; the rest is content.
 - `<Markdown>` renders layout tables with `role="presentation"`
 - `<Preview>` also emits a `<title>` tag
 
-Upgrade with `npm install react-email@latest` to get these defaults.
+Upgrade to a current pinned release of `react-email` (https://react.email/docs) to get these defaults.
 
 **What you still have to do (content choices):**
 - Open with a single `<Heading as="h1">`, nest subheadings in order, never skip levels (very short SMS-style emails may skip the heading entirely)

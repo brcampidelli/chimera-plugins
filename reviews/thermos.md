@@ -1,6 +1,7 @@
 # Review: thermos
 
-Reviewer: Claude Opus 5.5 (agent), preparing for Bruno Campidelli — human sign-off pending before publication
+Reviewer: Claude Opus 5.5 (AI agent) — not a human review
+Human sign-off: pending (no maintainer has signed this review yet)
 Date: 2026-10-17
 Reviewed sha: `1b800800583ee8ff7f2676caf7a5cb7f0804be85`
 Source: `./ports/thermos` — port of `cursor/plugins` / `thermos` at `1b800800583ee8ff7f2676caf7a5cb7f0804be85`

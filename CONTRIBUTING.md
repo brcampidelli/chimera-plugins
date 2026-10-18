@@ -1,5 +1,10 @@
 # Contribuindo / Contributing
 
+> **Primeira leva:** as revisões em `reviews/` foram feitas por um agente de IA (Claude Opus 5.5)
+> e trazem `Human sign-off: pending`. Antes de publicar, um mantenedor humano lê cada revisão,
+> confere o que ela afirma e troca essa linha pelo nome dele e a data. Revisão de agente não conta
+> como assinatura de mantenedor.
+
 Propostas entram por pull request. O CI (`.github/workflows/validate.yml`) roda
 `python scripts/check.py` e `chimera plugin validate` em cada pasta; sem os dois verdes, não entra.
 Rode localmente antes:
@@ -83,7 +88,8 @@ leitor, não siga — registre na revisão.
 7. Scripts lidos (uma skill pode mandar o agente rodar).
 8. Ação irreversível (pagamento, envio, ordem, deleção, deploy) marcada → aprovação por ação;
    nunca em bots ou cron.
-9. Revisor, data, sha.
+9. Revisor, data, sha — e `Human sign-off:` com o nome do mantenedor humano que assinou (revisão
+   feita por agente fica `pending` até alguém assinar).
 
 Nossos plugins: Apache-2.0, sem hooks salvo quando claramente úteis (e então documentados — chegam
 inertes no Chimera de qualquer forma), servidor MCP local sempre com versão exata publicada há pelo
@@ -92,6 +98,10 @@ menos duas semanas.
 ---
 
 ## English (summary)
+
+First wave: the reviews in `reviews/` were written by an AI agent (Claude Opus 5.5) and carry
+`Human sign-off: pending`. A human maintainer must read and sign each one before publication; an
+agent review is not a maintainer signature.
 
 Open a pull request. CI runs `scripts/check.py` and `chimera plugin validate` on every folder. Pick
 a form (ours / copy / port / pinned github commit), keep the upstream license file, write

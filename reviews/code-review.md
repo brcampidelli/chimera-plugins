@@ -1,6 +1,7 @@
 # Review: code-review
 
-Reviewer: Claude Opus 5.5 (agent), preparing for Bruno Campidelli — human sign-off pending before publication
+Reviewer: Claude Opus 5.5 (AI agent) — not a human review
+Human sign-off: pending (no maintainer has signed this review yet)
 Date: 2026-10-17
 Reviewed sha: `ea10b213686c90bb1984b2016937310e05336cf3`
 Source: `./vendor/code-review` — copy of `anthropics/claude-plugins-official` / `plugins/code-review` at `ea10b213686c90bb1984b2016937310e05336cf3`

@@ -9,7 +9,8 @@ Fastest path from zero to a live `https://` MCP URL. Free tier, no credit card t
 ## Bootstrap
 
 ```bash
-npm create cloudflare@latest -- my-mcp-server \
+# pin create-cloudflare to a release listed at https://developers.cloudflare.com/pages/get-started/c3/
+npm create cloudflare@<version> -- my-mcp-server \
   --template=cloudflare/ai/demos/remote-mcp-authless
 cd my-mcp-server
 ```

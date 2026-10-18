@@ -1,6 +1,7 @@
 # Review: resend
 
-Reviewer: Claude Opus 5.5 (agent), preparing for Bruno Campidelli — human sign-off pending before publication
+Reviewer: Claude Opus 5.5 (AI agent) — not a human review
+Human sign-off: pending (no maintainer has signed this review yet)
 Date: 2026-10-17
 Reviewed sha: `b2ae7b1798b70134faf679f35fc05b4331462988`
 Source: `./vendor/resend` — copy of `resend/resend-skills` / `.` at `b2ae7b1798b70134faf679f35fc05b4331462988`
@@ -15,7 +16,7 @@ License: MIT
 - [x] **MCP servers** — resend — `https://mcp.resend.com/mcp` (Resend's domain).
 - [x] **Secrets** — `RESEND_API_KEY` by name only.
 - [x] **Text read** — Manifest read; SKILL.md files and references scanned and spot-read; `fetch-all-templates.mjs` read (lists templates through the Resend SDK with `RESEND_API_KEY`).
-- [x] **Supply chain and reader-directed text** (`scripts/check.py` rules) — Upstream had a `curl … | sh` (Tailscale install) in `agent-email-inbox/references/webhook-setup.md` — **rewritten** (see MODIFICATIONS.md). Remaining in the copy: `npm install -g resend-cli` (×3) and `@latest` in React Email scaffolding docs (×7) — acknowledged in `scripts/acknowledged.json` as Resend's own tooling (same open question as stripe: rewrite with pinned versions or keep).
+- [x] **Supply chain and reader-directed text** (`scripts/check.py` rules) — Upstream had a `curl … | sh` (Tailscale install) in `agent-email-inbox/references/webhook-setup.md` — **rewritten** (see MODIFICATIONS.md). The `npm install -g resend-cli` (×3) and `@latest` installs of `resend`, `react-email` and `create-email` (×7) were **also rewritten** to links to the vendor's install pages or `@<version>` placeholders (see MODIFICATIONS.md). Clean after the change.
 - [x] **Irreversible actions** — **Sends email to real people.** Every send/broadcast needs approval; never from bots/cron without a per-campaign approval.
 
 ## Re-review

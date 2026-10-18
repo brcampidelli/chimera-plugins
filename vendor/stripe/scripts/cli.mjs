@@ -2,13 +2,13 @@ import { spawnSync } from 'node:child_process';
 import { CLI_COMMAND_TIMEOUT_MS } from './constants.mjs';
 
 export const CLI_NOT_INSTALLED_MESSAGE =
-  'The Stripe CLI can improve Stripe integration guidance. It can be installed with `npm i -g @stripe/cli`; `stripe login` connects an existing account, and `stripe sandbox create` creates a quick sandbox.';
+  'The Stripe CLI can improve Stripe integration guidance. Install instructions: https://docs.stripe.com/stripe-cli (pin the version); `stripe login` connects an existing account, and `stripe sandbox create` creates a quick sandbox.';
 
 export const CLI_NOT_LOGGED_IN_MESSAGE =
   'The Stripe CLI can provide better Stripe integration guidance when connected. `stripe login` connects an existing account, and `stripe sandbox create` creates a quick sandbox.';
 
 export const CLI_OUTDATED_MESSAGE =
-  'A newer Stripe CLI version is available. Updating with `npm i -g @stripe/cli@latest` can provide the latest Stripe integration guidance.';
+  'A newer Stripe CLI version is available. Update it following https://docs.stripe.com/stripe-cli to get the latest Stripe integration guidance.';
 
 const commandOptions = {
   encoding: 'utf8',

@@ -1,6 +1,7 @@
 # Review: supabase
 
-Reviewer: Claude Opus 5.5 (agent), preparing for Bruno Campidelli — human sign-off pending before publication
+Reviewer: Claude Opus 5.5 (AI agent) — not a human review
+Human sign-off: pending (no maintainer has signed this review yet)
 Date: 2026-10-17
 Reviewed sha: `0722921d5542fc593105c27bd52630babd8b8c2a`
 Source: `./ports/supabase` — port of `openai/plugins` / `plugins/supabase` at `0722921d5542fc593105c27bd52630babd8b8c2a`

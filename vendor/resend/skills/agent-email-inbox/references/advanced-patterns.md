@@ -67,7 +67,7 @@ This is critical for Level 3+ security. Even emails from trusted senders can con
 **Cause:** Resend SDK version too old — `resend.webhooks.verify()` was added in recent versions.
 **Fix:** Update to the latest SDK:
 ```bash
-npm install resend@latest
+npm install resend@<version>   # pick the current release: https://resend.com/docs/send-with-nodejs
 ```
 Or use the Svix fallback (see [webhook-setup.md](webhook-setup.md)).
 
@@ -76,7 +76,7 @@ Or use the Svix fallback (see [webhook-setup.md](webhook-setup.md)).
 **Cause:** Resend SDK version too old. `resend.inboxes.*` needs `resend` >= 6.34.1, and `emails.receiving.get()` also needs a recent SDK.
 **Fix:**
 ```bash
-npm install resend@latest
+npm install resend@<version>   # >= 6.34.1; current release: https://resend.com/docs/send-with-nodejs
 # Verify version:
 npm list resend
 ```
@@ -86,7 +86,7 @@ npm list resend
 **Possible causes:**
 1. **Wrong signing secret** — The signing secret is returned when you create the webhook via the API (`data.signing_secret`). If you've lost it, delete and recreate the webhook to get a new one.
 2. **Body parsing issue** — You must use the raw body for verification. Use `express.raw({ type: 'application/json' })` on the webhook route, not `express.json()`.
-3. **SDK version too old** — Update to `resend@latest`.
+3. **SDK version too old** — Update the `resend` package to a current pinned release (https://resend.com/docs/send-with-nodejs).
 
 ### ngrok connection refused / tunnel died
 

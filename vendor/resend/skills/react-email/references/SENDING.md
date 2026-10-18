@@ -54,7 +54,7 @@ The Node SDK automatically handles the plain-text rendering and HTML rendering f
 If preferred, you can upload the email as a template to Resend, which can be used to send emails with the Resend SDK for Node.js:
 
 ```bash
-npx react-email@latest resend setup
+npx react-email@<version> resend setup   # pin a release: https://react.email/docs
 ```
 
 This will require the user to provide a Resend API key in the terminal.

@@ -1,6 +1,7 @@
 # Review: mercadopago
 
-Reviewer: Claude Opus 5.5 (agent), preparing for Bruno Campidelli — human sign-off pending before publication
+Reviewer: Claude Opus 5.5 (AI agent) — not a human review
+Human sign-off: pending (no maintainer has signed this review yet)
 Date: 2026-10-17
 Reviewed sha: `9815b7fe3769783ddafce0745d113351c8e69ab0`
 Source: `./vendor/mercadopago` — copy of `mercadopago/mercadopago-claude-marketplace` / `plugins/mercadopago` at `9815b7fe3769783ddafce0745d113351c8e69ab0`
@@ -15,7 +16,7 @@ License: Apache-2.0
 - [x] **MCP servers** — mcp — `https://mcp.mercadopago.com/mcp` (Mercado Pago's domain) with two static headers (plugin version, invocation context); no secret in headers.
 - [x] **Secrets** — none in files; the hook that would block credential leaks is inert, so the review skill's advice (never commit `APP_USR-` tokens) is what remains.
 - [x] **Text read** — Manifest, `.mcp.json`, `hooks/hooks.json` and `hooks/check-version.sh` read in full; agent, commands and SKILL.md files scanned and spot-read; `validate_mp_credentials.py` header read (a PreToolUse guard that blocks writing live Mercado Pago credentials into files — inert in Chimera). The 27 `.mjs` validator/test scripts scanned and spot-read: local static checks of the user's integration; `api.qrserver.com` appears only as a forbidden pattern and in a negative test fixture.
-- [x] **Supply chain and reader-directed text** (`scripts/check.py` rules) — 1 finding, acknowledged: `npm install mercadopago@latest` in `mp-integrate/SKILL.md`, inside a step that requires explicit authorisation and an exact stable version.
+- [x] **Supply chain and reader-directed text** (`scripts/check.py` rules) — Upstream had `npm install mercadopago@latest` in `mp-integrate/SKILL.md` (inside a step that already required an exact stable version) — **rewritten** to `mercadopago@<exact-stable-version>`. Clean after the change.
 - [x] **Irreversible actions** — **Money.** Test users and test cards are safe; anything on a production account needs approval. Never from bots/cron.
 
 ## Re-review

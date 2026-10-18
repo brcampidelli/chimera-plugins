@@ -5,6 +5,10 @@ formato do Claude Code (`.claude-plugin/marketplace.json`). Traz plugins escrito
 com atribuição, de plugins de terceiros sob licença permissiva — cada um com a licença lida, a
 fonte fixada num commit e uma revisão de segurança registrada.
 
+> **Estado da revisão:** a primeira leva foi revisada por um **agente de IA** (Claude Opus 5.5).
+> **A assinatura humana está pendente** — nenhum mantenedor assinou as revisões em `reviews/`
+> ainda. Cada revisão diz o que foi lido por inteiro e o que foi só escaneado e lido por amostragem.
+
 ## Como instalar no Chimera
 
 Pelo terminal, fixando o commit do catálogo:
@@ -51,6 +55,17 @@ O comando `chimera plugin` existe a partir do Chimera 0.69.0.
 Lista completa, com licença, origem e categoria: `.claude-plugin/marketplace.json` e `catalog/`.
 Atribuições: [`NOTICE`](NOTICE).
 
+## Próxima leva
+
+Ficaram fora da primeira leva, com o motivo:
+
+| Plugin | Por quê |
+|---|---|
+| `vercel` (vercel/vercel-plugin, Apache-2.0) | 75 instruções de instalação com `@latest` ou `npm -g` sem versão no commit revisado — demais para aceitar sem reescrever; entra como cópia reescrita ou quando o upstream fixar versões |
+| `huggingface-skills` (Apache-2.0) | a skill principal começa com `curl … \| bash` e tem gatilho que domina todo turno |
+| `deepeval` (Apache-2.0) | biblioteca com ~1.600 scripts; não dá para revisar honestamente como plugin |
+| `etoro-trading` (MIT) | coloca ordens de trade; fica fora de plugin |
+
 ## Contribuir
 
 Veja [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -64,6 +79,10 @@ in Claude Code's format. It holds our own plugins (Apache-2.0) and attributed co
 licensed third-party plugins; every item has its license read, its source pinned to a commit and a
 recorded security review.
 
+> **Review status:** this first wave was reviewed by an **AI agent** (Claude Opus 5.5). **Human
+> sign-off is pending** — no maintainer has signed the reviews in `reviews/` yet. Each review says
+> what was read in full and what was only scanned and spot-read.
+
 **Install in Chimera (0.69.0+):** `chimera plugin marketplace add
 github:brcampidelli/chimera-plugins@<40-hex sha>`, then `chimera plugin install
 <name>@chimera-plugins` and `chimera plugin enable <name>` after reviewing it — or in the app under
@@ -74,6 +93,10 @@ are never run by Chimera; MCP servers are added only on request; every source is
 repository or a GitHub commit pinned by its full sha — no branches, no `@latest`, no unpinned npm, no
 `curl | sh`; only MIT, Apache-2.0, BSD, ISC, MPL-2.0 and CC0 content is copied; popularity is shown
 only as GitHub stars of the source repository with the date read, never as install counts.
+
+**Next wave:** `vercel` (75 unpinned `@latest`/`npm -g` install lines at the reviewed commit — too
+many to accept unrewritten), `huggingface-skills` (`curl | bash` in its main skill), `deepeval` (too
+large to review as a plugin), `etoro-trading` (places trades).
 
 Licensing: our content is Apache-2.0 ([LICENSE](LICENSE)); third-party copies keep their own
 licenses ([NOTICE](NOTICE)).
