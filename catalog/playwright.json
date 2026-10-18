@@ -1,0 +1,31 @@
+{
+  "id": "playwright",
+  "displayName": "Playwright (official MCP server)",
+  "category": "testing-quality",
+  "secondary": [
+    "sites-frontend"
+  ],
+  "tags": [
+    "browser",
+    "e2e",
+    "mcp"
+  ],
+  "featured": false,
+  "license": "Apache-2.0",
+  "origin": "ours",
+  "capability": "starts process",
+  "capabilities": [
+    "starts process"
+  ],
+  "runs": "1 local MCP server(s) via npx, added only on request",
+  "components": {
+    "skills": 0,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [
+      "playwright"
+    ],
+    "hooks": false,
+    "script_files": 0
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "whatsapp-cloud",
+  "displayName": "WhatsApp Cloud API",
+  "version": "0.1.0",
+  "description": "Build on Meta's official WhatsApp Cloud API: send text, media, interactive and template messages, receive and verify webhooks, manage templates, and stay inside the 24-hour window, opt-in and LGPD rules. Instructions only — no server, no hooks, no scripts.",
+  "author": {
+    "name": "Bruno Campidelli",
+    "url": "https://github.com/brcampidelli"
+  },
+  "homepage": "https://github.com/brcampidelli/chimera-plugins/tree/main/plugins/whatsapp-cloud",
+  "repository": "https://github.com/brcampidelli/chimera-plugins",
+  "license": "Apache-2.0",
+  "keywords": ["whatsapp", "whatsapp-cloud-api", "meta", "graph-api", "webhooks", "templates", "lgpd"]
+}

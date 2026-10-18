@@ -1,0 +1,32 @@
+{
+  "id": "hostinger",
+  "displayName": "Hostinger (official MCP server)",
+  "category": "servers-cloud",
+  "secondary": [
+    "sites-frontend"
+  ],
+  "tags": [
+    "vps",
+    "dns",
+    "mcp"
+  ],
+  "featured": false,
+  "license": "Apache-2.0",
+  "origin": "ours",
+  "capability": "starts process",
+  "capabilities": [
+    "starts process"
+  ],
+  "runs": "2 local MCP server(s) via npx, added only on request",
+  "components": {
+    "skills": 0,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [
+      "hostinger-dns",
+      "hostinger-vps"
+    ],
+    "hooks": false,
+    "script_files": 0
+  }
+}

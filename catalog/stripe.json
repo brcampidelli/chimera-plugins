@@ -1,0 +1,41 @@
+{
+  "id": "stripe",
+  "displayName": "stripe",
+  "category": "finance-payments",
+  "secondary": [
+    "apis-integrations"
+  ],
+  "tags": [
+    "payments",
+    "billing",
+    "webhooks"
+  ],
+  "featured": true,
+  "license": "MIT",
+  "origin": "copy",
+  "capability": "hooks (inert in Chimera)",
+  "capabilities": [
+    "hooks (inert in Chimera)",
+    "network",
+    "scripts (a skill may ask to run them)"
+  ],
+  "runs": "1 remote MCP server(s), added only on request: mcp.stripe.com; hooks present — never run by Chimera; 10 script file(s) a skill may ask to run (with your approval)",
+  "components": {
+    "skills": 10,
+    "commands": 2,
+    "agents": 1,
+    "mcp_servers": [
+      "stripe"
+    ],
+    "hooks": true,
+    "script_files": 10
+  },
+  "upstream": "stripe/ai",
+  "stars": {
+    "repo": "stripe/ai",
+    "count": 1955,
+    "read_at": "2026-10-17",
+    "scope": "repository",
+    "note": "stars of the whole source repository, which holds many plugins — not of this plugin"
+  }
+}

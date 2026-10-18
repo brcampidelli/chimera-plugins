@@ -1,0 +1,38 @@
+{
+  "id": "skill-creator",
+  "displayName": "skill-creator",
+  "category": "ai-models-agents",
+  "secondary": [
+    "engineering",
+    "testing-quality"
+  ],
+  "tags": [
+    "skills",
+    "evals",
+    "benchmark"
+  ],
+  "featured": false,
+  "license": "Apache-2.0",
+  "origin": "copy",
+  "capability": "scripts (a skill may ask to run them)",
+  "capabilities": [
+    "scripts (a skill may ask to run them)"
+  ],
+  "runs": "10 script file(s) a skill may ask to run (with your approval)",
+  "components": {
+    "skills": 1,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [],
+    "hooks": false,
+    "script_files": 10
+  },
+  "upstream": "anthropics/claude-plugins-official",
+  "stars": {
+    "repo": "anthropics/claude-plugins-official",
+    "count": 41713,
+    "read_at": "2026-10-17",
+    "scope": "repository",
+    "note": "stars of the whole source repository, which holds many plugins — not of this plugin"
+  }
+}

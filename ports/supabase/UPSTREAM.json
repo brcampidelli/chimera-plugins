@@ -1,0 +1,17 @@
+{
+  "repo": "openai/plugins",
+  "path": "plugins/supabase",
+  "sha": "0722921d5542fc593105c27bd52630babd8b8c2a",
+  "tree_sha": "b44239dd7c7132e45d35aa260d8d03911c263d9d",
+  "license": "MIT",
+  "copied_at": "2026-10-17",
+  "modified": true,
+  "ported_from": "Codex (.codex-plugin)",
+  "changes": [
+    "added .claude-plugin/plugin.json (written from the Codex manifest's facts: name, author, links, license)",
+    "left out .codex-plugin/plugin.json and .app.json (a ChatGPT app id, not portable)",
+    "left out assets/ (Supabase logos — trademarks)",
+    "skills/, .mcp.json, LICENSE, README.md, CHANGELOG.md copied byte for byte"
+  ],
+  "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
+}

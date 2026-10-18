@@ -1,0 +1,84 @@
+chimera-plugins
+Copyright 2026 Bruno Campidelli
+
+The content written for this repository (plugins/, scripts/, catalog/, reviews/, the documentation
+and the marketplace file) is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This repository also contains copies of third-party plugins under their own licenses. Each copy
+keeps the upstream license text in its folder, an UPSTREAM.json with the exact source commit, and,
+when anything was changed, a MODIFICATIONS.md or PORT.md describing the change. The upstream
+license governs those files; the Apache-2.0 license of this repository does not replace it.
+
+Entries in .claude-plugin/marketplace.json whose source is a pinned GitHub commit (vercel, sentry,
+twilio-developer-kit, superpowers) are not copied here; they are fetched from their own
+repositories at the listed commit and remain under their own licenses.
+
+Third-party copies
+------------------
+
+vendor/code-review
+  copied unmodified from https://github.com/anthropics/claude-plugins-official/tree/ea10b213686c90bb1984b2016937310e05336cf3/plugins/code-review
+  License: Apache-2.0 (text in vendor/code-review/LICENSE)
+
+vendor/pr-review-toolkit
+  copied unmodified from https://github.com/anthropics/claude-plugins-official/tree/ea10b213686c90bb1984b2016937310e05336cf3/plugins/pr-review-toolkit
+  License: Apache-2.0 (text in vendor/pr-review-toolkit/LICENSE)
+
+vendor/frontend-design
+  copied unmodified from https://github.com/anthropics/claude-plugins-official/tree/ea10b213686c90bb1984b2016937310e05336cf3/plugins/frontend-design
+  License: Apache-2.0 (text in vendor/frontend-design/LICENSE)
+
+vendor/skill-creator
+  copied unmodified from https://github.com/anthropics/claude-plugins-official/tree/ea10b213686c90bb1984b2016937310e05336cf3/plugins/skill-creator
+  License: Apache-2.0 (text in vendor/skill-creator/LICENSE)
+
+vendor/mcp-server-dev
+  copied unmodified from https://github.com/anthropics/claude-plugins-official/tree/ea10b213686c90bb1984b2016937310e05336cf3/plugins/mcp-server-dev
+  License: Apache-2.0 (text in vendor/mcp-server-dev/LICENSE)
+
+vendor/customer-support
+  copied with modifications from https://github.com/anthropics/knowledge-work-plugins/tree/33eeda1e8fd856455b05479d13a0f85b5f803744/customer-support
+  License: Apache-2.0 (text in vendor/customer-support/LICENSE)
+
+vendor/marketing
+  copied with modifications from https://github.com/anthropics/knowledge-work-plugins/tree/33eeda1e8fd856455b05479d13a0f85b5f803744/marketing
+  License: Apache-2.0 (text in vendor/marketing/LICENSE)
+
+vendor/product-management
+  copied with modifications from https://github.com/anthropics/knowledge-work-plugins/tree/33eeda1e8fd856455b05479d13a0f85b5f803744/product-management
+  License: Apache-2.0 (text in vendor/product-management/LICENSE)
+
+vendor/data
+  copied with modifications from https://github.com/anthropics/knowledge-work-plugins/tree/33eeda1e8fd856455b05479d13a0f85b5f803744/data
+  License: Apache-2.0 (text in vendor/data/LICENSE)
+
+vendor/stripe
+  copied unmodified from https://github.com/stripe/ai/tree/c1f5b0826f3f33d7e1cc7eff5e5e6cd42749808b/providers/claude/plugin
+  License: MIT (text in vendor/stripe/LICENSE)
+
+vendor/mercadopago
+  copied unmodified from https://github.com/mercadopago/mercadopago-claude-marketplace/tree/9815b7fe3769783ddafce0745d113351c8e69ab0/plugins/mercadopago
+  License: Apache-2.0 (text in vendor/mercadopago/LICENSE)
+
+vendor/resend
+  copied with modifications from https://github.com/resend/resend-skills/tree/b2ae7b1798b70134faf679f35fc05b4331462988
+  License: MIT (text in vendor/resend/LICENSE)
+
+ports/supabase
+  ported to the Claude Code layout from https://github.com/openai/plugins/tree/0722921d5542fc593105c27bd52630babd8b8c2a/plugins/supabase
+  License: MIT (text in ports/supabase/LICENSE)
+
+ports/posthog
+  ported to the Claude Code layout from https://github.com/openai/plugins/tree/0722921d5542fc593105c27bd52630babd8b8c2a/plugins/posthog
+  License: MIT (text in ports/posthog/LICENSE)
+
+ports/thermos
+  ported to the Claude Code layout from https://github.com/cursor/plugins/tree/1b800800583ee8ff7f2676caf7a5cb7f0804be85/thermos
+  License: MIT (text in ports/thermos/LICENSE)
+
+ports/cli-for-agent
+  ported to the Claude Code layout from https://github.com/cursor/plugins/tree/1b800800583ee8ff7f2676caf7a5cb7f0804be85/cli-for-agent
+  License: MIT (text in ports/cli-for-agent/LICENSE)
+
+vendor/mercadopago also carries the upstream NOTICE file (vendor/mercadopago/NOTICE), reproduced as
+required by section 4(d) of the Apache License 2.0.

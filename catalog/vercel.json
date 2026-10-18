@@ -1,0 +1,41 @@
+{
+  "id": "vercel",
+  "displayName": "vercel",
+  "category": "servers-cloud",
+  "secondary": [
+    "sites-frontend",
+    "pipelines-jobs"
+  ],
+  "tags": [
+    "deploy",
+    "nextjs",
+    "vercel"
+  ],
+  "featured": true,
+  "license": "Apache-2.0",
+  "origin": "pinned-github",
+  "capability": "hooks (inert in Chimera)",
+  "capabilities": [
+    "hooks (inert in Chimera)",
+    "network",
+    "scripts (a skill may ask to run them)"
+  ],
+  "runs": "1 remote MCP server(s), added only on request: mcp.vercel.com; hooks present — never run by Chimera; 80 script file(s) a skill may ask to run (with your approval)",
+  "components": {
+    "skills": 43,
+    "commands": 5,
+    "agents": 3,
+    "mcp_servers": [
+      "vercel"
+    ],
+    "hooks": true,
+    "script_files": 80
+  },
+  "upstream": "vercel/vercel-plugin",
+  "stars": {
+    "repo": "vercel/vercel-plugin",
+    "count": 309,
+    "read_at": "2026-10-17",
+    "scope": "plugin-repository"
+  }
+}

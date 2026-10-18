@@ -1,0 +1,34 @@
+{
+  "id": "github",
+  "displayName": "GitHub (official MCP server)",
+  "category": "pull-requests",
+  "secondary": [
+    "code",
+    "pipelines-jobs"
+  ],
+  "tags": [
+    "github",
+    "issues",
+    "actions",
+    "mcp"
+  ],
+  "featured": true,
+  "license": "Apache-2.0",
+  "origin": "ours",
+  "capability": "network",
+  "capabilities": [
+    "network"
+  ],
+  "runs": "2 remote MCP server(s), added only on request: api.githubcopilot.com",
+  "components": {
+    "skills": 0,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [
+      "github",
+      "github-readonly"
+    ],
+    "hooks": false,
+    "script_files": 0
+  }
+}

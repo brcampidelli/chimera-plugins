@@ -1,0 +1,14 @@
+{
+  "repo": "resend/resend-skills",
+  "path": ".",
+  "sha": "b2ae7b1798b70134faf679f35fc05b4331462988",
+  "tree_sha": null,
+  "license": "MIT",
+  "copied_at": "2026-10-17",
+  "modified": true,
+  "changes": [
+    "skills/agent-email-inbox/references/webhook-setup.md: replaced a `curl … | sh` Tailscale install line with a pointer to Tailscale's official download page (repository rule: no download piped into a shell)"
+  ],
+  "excluded": "Only the Claude Code plugin is copied: .claude-plugin/plugin.json, skills/, README.md, LICENSE. Left out: other harnesses' manifests (.cursor-plugin, .grok-plugin, root plugin.json/mcp.json), the repo's marketplace.json, CI workflows, skill-evals, AGENTS.md, CLAUDE.md (a symlink upstream) and the logo (a trademark).",
+  "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
+}

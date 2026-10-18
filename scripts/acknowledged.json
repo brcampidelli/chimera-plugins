@@ -1,0 +1,52 @@
+{
+  "vendor/mcp-server-dev/skills/build-mcp-server/references/deploy-cloudflare-workers.md": {
+    "at-latest": "documents Cloudflare's own scaffolder (`npm create cloudflare@latest`) for a project the user creates; not run by the plugin; Chimera asks before any shell command"
+  },
+  "vendor/mercadopago/skills/mp-integrate/SKILL.md": {
+    "at-latest": "the same sentence requires explicit user authorisation and an exact stable version before any SDK install; the @latest text names the command shape, not a default"
+  },
+  "vendor/pr-review-toolkit/agents/silent-failure-hunter.md": {
+    "conceal": "false positive: lists 'retry logic that exhausts attempts without informing the user' as a bug pattern to find"
+  },
+  "vendor/stripe/scripts/cli.mjs": {
+    "at-latest": "hook helper message suggesting an update of Stripe's own CLI; hooks are inert in Chimera",
+    "npm-global-unpinned": "hook helper message suggesting installing Stripe's own CLI; hooks are inert in Chimera"
+  },
+  "vendor/stripe/skills/stripe-best-practices/SKILL.md": {
+    "npm-global-unpinned": "tells the user how to install Stripe's official CLI for a sandbox; the agent asks before running it; open question to the owner whether to rewrite with a pinned version"
+  },
+  "README.md": {
+    "at-latest": "the repository README names '@latest' as something this catalog refuses",
+    "curl-pipe-shell": "the repository README names 'curl | sh' as something this catalog refuses"
+  },
+  "CONTRIBUTING.md": {
+    "at-latest": "describes the rule",
+    "curl-pipe-shell": "describes the rule",
+    "npm-global-unpinned": "describes the rule",
+    "override": "describes what the reader-directed-text rule looks for",
+    "addressed-to-ai": "describes what the reader-directed-text rule looks for",
+    "if-you-are-ai": "describes what the reader-directed-text rule looks for",
+    "iwr-iex": "describes the rule"
+  },
+  "plugins/playwright/README.md": {
+    "at-latest": "explains that the upstream plugin uses '@latest' and this one pins an exact version"
+  },
+  "vendor/resend/skills/agent-email-inbox/references/advanced-patterns.md": {
+    "at-latest": "Resend's own SDK/React Email tooling in documentation the user follows for their project; the agent asks before running any install; open question to the owner whether to rewrite with pinned versions"
+  },
+  "vendor/resend/skills/email-best-practices/references/accessibility.md": {
+    "at-latest": "Resend's own SDK/React Email tooling in documentation the user follows for their project; the agent asks before running any install; open question to the owner whether to rewrite with pinned versions"
+  },
+  "vendor/resend/skills/react-email/references/SENDING.md": {
+    "at-latest": "Resend's own SDK/React Email tooling in documentation the user follows for their project; the agent asks before running any install; open question to the owner whether to rewrite with pinned versions"
+  },
+  "vendor/resend/skills/react-email/SKILL.md": {
+    "at-latest": "Resend's own SDK/React Email tooling in documentation the user follows for their project; the agent asks before running any install; open question to the owner whether to rewrite with pinned versions"
+  },
+  "vendor/resend/skills/resend-cli/references/workflows.md": {
+    "npm-global-unpinned": "installs Resend's official CLI, documented for the user; the agent asks before running it; open question to the owner whether to rewrite with a pinned version"
+  },
+  "vendor/resend/skills/resend-cli/SKILL.md": {
+    "npm-global-unpinned": "installs Resend's official CLI, documented for the user; the agent asks before running it; open question to the owner whether to rewrite with a pinned version"
+  }
+}

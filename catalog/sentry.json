@@ -1,0 +1,38 @@
+{
+  "id": "sentry",
+  "displayName": "sentry",
+  "category": "logs-errors",
+  "secondary": [
+    "servers-cloud"
+  ],
+  "tags": [
+    "errors",
+    "monitoring",
+    "debugging"
+  ],
+  "featured": true,
+  "license": "MIT",
+  "origin": "pinned-github",
+  "capability": "network",
+  "capabilities": [
+    "network"
+  ],
+  "runs": "1 remote MCP server(s), added only on request: mcp.sentry.dev",
+  "components": {
+    "skills": 8,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [
+      "sentry"
+    ],
+    "hooks": false,
+    "script_files": 0
+  },
+  "upstream": "getsentry/plugin-claude",
+  "stars": {
+    "repo": "getsentry/plugin-claude",
+    "count": 4,
+    "read_at": "2026-10-17",
+    "scope": "plugin-repository"
+  }
+}

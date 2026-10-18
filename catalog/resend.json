@@ -1,0 +1,40 @@
+{
+  "id": "resend",
+  "displayName": "resend",
+  "category": "email-messaging",
+  "secondary": [
+    "marketing",
+    "apis-integrations"
+  ],
+  "tags": [
+    "email",
+    "newsletter",
+    "react-email"
+  ],
+  "featured": true,
+  "license": "MIT",
+  "origin": "copy",
+  "capability": "network",
+  "capabilities": [
+    "network",
+    "scripts (a skill may ask to run them)"
+  ],
+  "runs": "1 remote MCP server(s), added only on request: mcp.resend.com; 1 script file(s) a skill may ask to run (with your approval)",
+  "components": {
+    "skills": 5,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [
+      "resend"
+    ],
+    "hooks": false,
+    "script_files": 1
+  },
+  "upstream": "resend/resend-skills",
+  "stars": {
+    "repo": "resend/resend-skills",
+    "count": 202,
+    "read_at": "2026-10-17",
+    "scope": "plugin-repository"
+  }
+}

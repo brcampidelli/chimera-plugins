@@ -1,0 +1,38 @@
+{
+  "id": "thermos",
+  "displayName": "Thermos",
+  "category": "pull-requests",
+  "secondary": [
+    "security",
+    "testing-quality"
+  ],
+  "tags": [
+    "code-review",
+    "security",
+    "quality"
+  ],
+  "featured": false,
+  "license": "MIT",
+  "origin": "port",
+  "capability": "instructions only",
+  "capabilities": [
+    "instructions only"
+  ],
+  "runs": "instructions only (skills/commands/agents in Markdown)",
+  "components": {
+    "skills": 3,
+    "commands": 0,
+    "agents": 2,
+    "mcp_servers": [],
+    "hooks": false,
+    "script_files": 0
+  },
+  "upstream": "cursor/plugins",
+  "stars": {
+    "repo": "cursor/plugins",
+    "count": 12288,
+    "read_at": "2026-10-17",
+    "scope": "repository",
+    "note": "stars of the whole source repository, which holds many plugins — not of this plugin"
+  }
+}

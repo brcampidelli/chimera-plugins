@@ -1,0 +1,13 @@
+{
+  "repo": "stripe/ai",
+  "path": "providers/claude/plugin",
+  "sha": "c1f5b0826f3f33d7e1cc7eff5e5e6cd42749808b",
+  "tree_sha": "c37b4e224f85c4e603cc6d129139769cd9080b83",
+  "license": "MIT",
+  "copied_at": "2026-10-17",
+  "modified": false,
+  "added_files": [
+    "LICENSE (copied from the repository root; the plugin folder has none)"
+  ],
+  "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
+}

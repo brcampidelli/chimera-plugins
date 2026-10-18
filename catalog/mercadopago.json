@@ -1,0 +1,42 @@
+{
+  "id": "mercadopago",
+  "displayName": "Mercado Pago",
+  "category": "finance-payments",
+  "secondary": [
+    "apis-integrations",
+    "security"
+  ],
+  "tags": [
+    "payments",
+    "brasil",
+    "pix",
+    "checkout"
+  ],
+  "featured": true,
+  "license": "Apache-2.0",
+  "origin": "copy",
+  "capability": "hooks (inert in Chimera)",
+  "capabilities": [
+    "hooks (inert in Chimera)",
+    "network",
+    "scripts (a skill may ask to run them)"
+  ],
+  "runs": "1 remote MCP server(s), added only on request: mcp.mercadopago.com; hooks present — never run by Chimera; 27 script file(s) a skill may ask to run (with your approval)",
+  "components": {
+    "skills": 4,
+    "commands": 4,
+    "agents": 1,
+    "mcp_servers": [
+      "mcp"
+    ],
+    "hooks": true,
+    "script_files": 27
+  },
+  "upstream": "mercadopago/mercadopago-claude-marketplace",
+  "stars": {
+    "repo": "mercadopago/mercadopago-claude-marketplace",
+    "count": 29,
+    "read_at": "2026-10-17",
+    "scope": "plugin-repository"
+  }
+}

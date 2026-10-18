@@ -1,0 +1,40 @@
+{
+  "id": "posthog",
+  "displayName": "PostHog",
+  "category": "product",
+  "secondary": [
+    "logs-errors",
+    "marketing"
+  ],
+  "tags": [
+    "analytics",
+    "feature-flags",
+    "experiments"
+  ],
+  "featured": false,
+  "license": "MIT",
+  "origin": "port",
+  "capability": "network",
+  "capabilities": [
+    "network"
+  ],
+  "runs": "1 remote MCP server(s), added only on request: mcp.posthog.com",
+  "components": {
+    "skills": 1,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [
+      "posthog"
+    ],
+    "hooks": false,
+    "script_files": 0
+  },
+  "upstream": "openai/plugins",
+  "stars": {
+    "repo": "openai/plugins",
+    "count": 7482,
+    "read_at": "2026-10-17",
+    "scope": "repository",
+    "note": "stars of the whole source repository, which holds many plugins — not of this plugin"
+  }
+}

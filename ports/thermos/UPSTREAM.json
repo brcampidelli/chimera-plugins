@@ -1,0 +1,16 @@
+{
+  "repo": "cursor/plugins",
+  "path": "thermos",
+  "sha": "1b800800583ee8ff7f2676caf7a5cb7f0804be85",
+  "tree_sha": "82dd7121447abad1c551e5d6ba829de3c6f3e4c4",
+  "license": "MIT",
+  "copied_at": "2026-10-17",
+  "modified": true,
+  "ported_from": "Cursor (.cursor-plugin)",
+  "changes": [
+    "added .claude-plugin/plugin.json (facts from the Cursor manifest; dropped Cursor-only 'logo', 'category', 'tags')",
+    "left out .cursor-plugin/ and assets/logo.png",
+    "skills/ and agents/ copied byte for byte; their text names Cursor's subagent types ('shell', 'explore') — in Chimera/Claude Code use the equivalent built-in agents"
+  ],
+  "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
+}

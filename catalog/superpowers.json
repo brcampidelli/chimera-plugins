@@ -1,0 +1,39 @@
+{
+  "id": "superpowers",
+  "displayName": "superpowers",
+  "category": "engineering",
+  "secondary": [
+    "testing-quality",
+    "code"
+  ],
+  "tags": [
+    "tdd",
+    "debugging",
+    "planning",
+    "subagents"
+  ],
+  "featured": false,
+  "license": "MIT",
+  "origin": "pinned-github",
+  "capability": "hooks (inert in Chimera)",
+  "capabilities": [
+    "hooks (inert in Chimera)",
+    "scripts (a skill may ask to run them)"
+  ],
+  "runs": "hooks present — never run by Chimera; 16 script file(s) a skill may ask to run (with your approval)",
+  "components": {
+    "skills": 15,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [],
+    "hooks": true,
+    "script_files": 16
+  },
+  "upstream": "obra/superpowers",
+  "stars": {
+    "repo": "obra/superpowers",
+    "count": 301208,
+    "read_at": "2026-10-17",
+    "scope": "plugin-repository"
+  }
+}

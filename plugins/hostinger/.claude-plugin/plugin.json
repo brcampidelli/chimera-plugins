@@ -1,0 +1,29 @@
+{
+  "name": "hostinger",
+  "displayName": "Hostinger (official MCP server)",
+  "version": "0.1.0",
+  "description": "Hostinger's official API MCP server, pinned to an exact npm version and narrowed to two scopes: VPS (status, metrics, snapshots, firewall, restarts) and DNS zones. Billing, domain purchase and hosting-order tools are deliberately not included.",
+  "author": {
+    "name": "Bruno Campidelli",
+    "url": "https://github.com/brcampidelli"
+  },
+  "homepage": "https://github.com/brcampidelli/chimera-plugins/tree/main/plugins/hostinger",
+  "repository": "https://github.com/brcampidelli/chimera-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "hostinger",
+    "vps",
+    "dns",
+    "mcp",
+    "hosting"
+  ],
+  "userConfig": {
+    "hostinger_api_token": {
+      "type": "string",
+      "title": "Hostinger API token",
+      "description": "Created in hPanel › Account › API. Leave empty to sign in with OAuth in the browser on first use.",
+      "sensitive": true,
+      "required": false
+    }
+  }
+}

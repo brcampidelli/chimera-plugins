@@ -1,0 +1,20 @@
+{
+  "name": "playwright",
+  "displayName": "Playwright (official MCP server)",
+  "version": "0.1.0",
+  "description": "Microsoft's Playwright MCP server, pinned to an exact npm version: the agent can open pages, click, type, read the accessibility snapshot and take screenshots in a real browser for end-to-end checks of your front-end.",
+  "author": {
+    "name": "Bruno Campidelli",
+    "url": "https://github.com/brcampidelli"
+  },
+  "homepage": "https://github.com/brcampidelli/chimera-plugins/tree/main/plugins/playwright",
+  "repository": "https://github.com/brcampidelli/chimera-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "playwright",
+    "browser",
+    "e2e",
+    "testing",
+    "mcp"
+  ]
+}

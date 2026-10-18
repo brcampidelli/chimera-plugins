@@ -1,0 +1,52 @@
+{
+  "id": "product-management",
+  "displayName": "product-management",
+  "category": "product",
+  "secondary": [
+    "research",
+    "tickets-tasks"
+  ],
+  "tags": [
+    "specs",
+    "roadmap",
+    "research"
+  ],
+  "featured": false,
+  "license": "Apache-2.0",
+  "origin": "copy",
+  "capability": "network",
+  "capabilities": [
+    "network"
+  ],
+  "runs": "13 remote MCP server(s), added only on request: api.fireflies.ai, app.pendo.io, mcp.amplitude.com, mcp.asana.com, mcp.atlassian.com, mcp.clickup.com, mcp.eu.amplitude.com, mcp.figma.com, mcp.intercom.com, mcp.linear.app, mcp.monday.com, mcp.notion.com, mcp.similarweb.com",
+  "components": {
+    "skills": 8,
+    "commands": 1,
+    "agents": 0,
+    "mcp_servers": [
+      "amplitude",
+      "amplitude-eu",
+      "asana",
+      "atlassian",
+      "clickup",
+      "figma",
+      "fireflies",
+      "intercom",
+      "linear",
+      "monday",
+      "notion",
+      "pendo",
+      "similarweb"
+    ],
+    "hooks": false,
+    "script_files": 0
+  },
+  "upstream": "anthropics/knowledge-work-plugins",
+  "stars": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "count": 30000,
+    "read_at": "2026-10-17",
+    "scope": "repository",
+    "note": "stars of the whole source repository, which holds many plugins — not of this plugin"
+  }
+}

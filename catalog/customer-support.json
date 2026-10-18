@@ -1,0 +1,43 @@
+{
+  "id": "customer-support",
+  "displayName": "customer-support",
+  "category": "tickets-tasks",
+  "secondary": [
+    "email-messaging",
+    "reference-docs"
+  ],
+  "tags": [
+    "support",
+    "triage",
+    "knowledge-base"
+  ],
+  "featured": false,
+  "license": "Apache-2.0",
+  "origin": "copy",
+  "capability": "network",
+  "capabilities": [
+    "network"
+  ],
+  "runs": "4 remote MCP server(s), added only on request: mcp.api.getguru.com, mcp.atlassian.com, mcp.intercom.com, mcp.notion.com",
+  "components": {
+    "skills": 5,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [
+      "atlassian",
+      "guru",
+      "intercom",
+      "notion"
+    ],
+    "hooks": false,
+    "script_files": 0
+  },
+  "upstream": "anthropics/knowledge-work-plugins",
+  "stars": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "count": 30000,
+    "read_at": "2026-10-17",
+    "scope": "repository",
+    "note": "stars of the whole source repository, which holds many plugins — not of this plugin"
+  }
+}

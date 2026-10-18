@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "hostinger-vps": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "--package=hostinger-api-mcp@2.7.0",
+        "hostinger-vps-mcp"
+      ],
+      "env": {
+        "HOSTINGER_API_TOKEN": "${user_config.hostinger_api_token}"
+      }
+    },
+    "hostinger-dns": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "--package=hostinger-api-mcp@2.7.0",
+        "hostinger-dns-mcp"
+      ],
+      "env": {
+        "HOSTINGER_API_TOKEN": "${user_config.hostinger_api_token}"
+      }
+    }
+  }
+}

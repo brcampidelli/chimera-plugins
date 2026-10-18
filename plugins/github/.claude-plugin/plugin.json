@@ -1,0 +1,29 @@
+{
+  "name": "github",
+  "displayName": "GitHub (official MCP server)",
+  "version": "0.1.0",
+  "description": "Connects GitHub's official remote MCP server (api.githubcopilot.com). Two servers: a read-only one for repositories, issues, pull requests and Actions, and a read-write one you add only when you want the agent to open issues, comment or edit. Authenticates with a fine-grained personal access token you provide.",
+  "author": {
+    "name": "Bruno Campidelli",
+    "url": "https://github.com/brcampidelli"
+  },
+  "homepage": "https://github.com/brcampidelli/chimera-plugins/tree/main/plugins/github",
+  "repository": "https://github.com/brcampidelli/chimera-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "github",
+    "mcp",
+    "pull-requests",
+    "issues",
+    "actions"
+  ],
+  "userConfig": {
+    "github_token": {
+      "type": "string",
+      "title": "GitHub personal access token",
+      "description": "A fine-grained token scoped to the repositories the agent may see. Read-only scopes are enough for the read-only server.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

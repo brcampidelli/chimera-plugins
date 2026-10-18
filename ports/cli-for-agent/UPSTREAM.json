@@ -1,0 +1,16 @@
+{
+  "repo": "cursor/plugins",
+  "path": "cli-for-agent",
+  "sha": "1b800800583ee8ff7f2676caf7a5cb7f0804be85",
+  "tree_sha": "79827e3a60f159aecb2c0aa14d2b267a7160ecc4",
+  "license": "MIT",
+  "copied_at": "2026-10-17",
+  "modified": true,
+  "ported_from": "Cursor (.cursor-plugin)",
+  "changes": [
+    "added .claude-plugin/plugin.json (facts from the Cursor manifest)",
+    "left out .cursor-plugin/",
+    "skills/, README.md, LICENSE copied byte for byte"
+  ],
+  "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
+}

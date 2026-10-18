@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/claude-plugins-official",
+  "path": "plugins/mcp-server-dev",
+  "sha": "ea10b213686c90bb1984b2016937310e05336cf3",
+  "tree_sha": "83df44e1b79aeac24a618b9ba030d7c2408b5180",
+  "license": "Apache-2.0",
+  "copied_at": "2026-10-17",
+  "modified": false,
+  "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
+}

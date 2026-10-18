@@ -1,0 +1,13 @@
+{
+  "repo": "anthropics/knowledge-work-plugins",
+  "path": "data",
+  "sha": "33eeda1e8fd856455b05479d13a0f85b5f803744",
+  "tree_sha": "76c510ffbdb7a301fbaa96e630d1a36195484e61",
+  "license": "Apache-2.0",
+  "copied_at": "2026-10-17",
+  "modified": true,
+  "changes": [
+    ".mcp.json: removed servers whose 'url' is an empty string (Chimera and Claude Code refuse a server with neither command nor url)"
+  ],
+  "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
+}

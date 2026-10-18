@@ -1,0 +1,49 @@
+{
+  "id": "marketing",
+  "displayName": "marketing",
+  "category": "marketing",
+  "secondary": [
+    "design-media",
+    "research"
+  ],
+  "tags": [
+    "campaigns",
+    "seo",
+    "content",
+    "email"
+  ],
+  "featured": false,
+  "license": "Apache-2.0",
+  "origin": "copy",
+  "capability": "network",
+  "capabilities": [
+    "network"
+  ],
+  "runs": "9 remote MCP server(s), added only on request: api.ahrefs.com, mcp.amplitude.com, mcp.canva.com, mcp.eu.amplitude.com, mcp.figma.com, mcp.klaviyo.com, mcp.notion.com, mcp.similarweb.com, mcp.supermetrics.com",
+  "components": {
+    "skills": 8,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [
+      "ahrefs",
+      "amplitude",
+      "amplitude-eu",
+      "canva",
+      "figma",
+      "klaviyo",
+      "notion",
+      "similarweb",
+      "supermetrics"
+    ],
+    "hooks": false,
+    "script_files": 0
+  },
+  "upstream": "anthropics/knowledge-work-plugins",
+  "stars": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "count": 30000,
+    "read_at": "2026-10-17",
+    "scope": "repository",
+    "note": "stars of the whole source repository, which holds many plugins — not of this plugin"
+  }
+}

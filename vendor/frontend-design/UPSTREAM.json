@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/claude-plugins-official",
+  "path": "plugins/frontend-design",
+  "sha": "ea10b213686c90bb1984b2016937310e05336cf3",
+  "tree_sha": "47041d13c22c96f6e0f3dbf3c28d7f415c4c60db",
+  "license": "Apache-2.0",
+  "copied_at": "2026-10-17",
+  "modified": false,
+  "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
+}

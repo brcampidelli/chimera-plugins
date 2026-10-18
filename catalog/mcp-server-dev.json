@@ -1,0 +1,38 @@
+{
+  "id": "mcp-server-dev",
+  "displayName": "mcp-server-dev",
+  "category": "ai-models-agents",
+  "secondary": [
+    "apis-integrations",
+    "engineering"
+  ],
+  "tags": [
+    "mcp",
+    "server",
+    "tools"
+  ],
+  "featured": false,
+  "license": "Apache-2.0",
+  "origin": "copy",
+  "capability": "instructions only",
+  "capabilities": [
+    "instructions only"
+  ],
+  "runs": "instructions only (skills/commands/agents in Markdown)",
+  "components": {
+    "skills": 3,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [],
+    "hooks": false,
+    "script_files": 0
+  },
+  "upstream": "anthropics/claude-plugins-official",
+  "stars": {
+    "repo": "anthropics/claude-plugins-official",
+    "count": 41713,
+    "read_at": "2026-10-17",
+    "scope": "repository",
+    "note": "stars of the whole source repository, which holds many plugins — not of this plugin"
+  }
+}

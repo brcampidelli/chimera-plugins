@@ -1,0 +1,16 @@
+{
+  "repo": "openai/plugins",
+  "path": "plugins/posthog",
+  "sha": "0722921d5542fc593105c27bd52630babd8b8c2a",
+  "tree_sha": "99359b5f77febc5f29573ce0e337992390e59203",
+  "license": "MIT",
+  "copied_at": "2026-10-17",
+  "modified": true,
+  "ported_from": "Codex (.codex-plugin)",
+  "changes": [
+    "added .claude-plugin/plugin.json (facts from the Codex manifest)",
+    "added LICENSE at the plugin root: a copy of skills/posthog/LICENSE.txt (MIT, PostHog); the upstream plugin root has no license file, so our one glue file (.claude-plugin/plugin.json) is contributed under the same MIT terms; .mcp.json is the upstream file, unchanged (a server URL)",
+    "left out .codex-plugin/, .app.json, assets/ (logos, screenshots) and skills/posthog/agents/openai.yaml (Codex-only metadata)"
+  ],
+  "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
+}

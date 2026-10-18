@@ -1,0 +1,46 @@
+{
+  "id": "data",
+  "displayName": "data",
+  "category": "databases",
+  "secondary": [
+    "research",
+    "product"
+  ],
+  "tags": [
+    "sql",
+    "analysis",
+    "dashboards"
+  ],
+  "featured": false,
+  "license": "Apache-2.0",
+  "origin": "copy",
+  "capability": "network",
+  "capabilities": [
+    "network",
+    "scripts (a skill may ask to run them)"
+  ],
+  "runs": "6 remote MCP server(s), added only on request: api.definite.app, app.hex.tech, bigquery.googleapis.com, mcp.amplitude.com, mcp.atlassian.com, mcp.eu.amplitude.com; 1 script file(s) a skill may ask to run (with your approval)",
+  "components": {
+    "skills": 10,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [
+      "amplitude",
+      "amplitude-eu",
+      "atlassian",
+      "bigquery",
+      "definite",
+      "hex"
+    ],
+    "hooks": false,
+    "script_files": 1
+  },
+  "upstream": "anthropics/knowledge-work-plugins",
+  "stars": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "count": 30000,
+    "read_at": "2026-10-17",
+    "scope": "repository",
+    "note": "stars of the whole source repository, which holds many plugins — not of this plugin"
+  }
+}

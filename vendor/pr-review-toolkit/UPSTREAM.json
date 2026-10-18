@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/claude-plugins-official",
+  "path": "plugins/pr-review-toolkit",
+  "sha": "ea10b213686c90bb1984b2016937310e05336cf3",
+  "tree_sha": "24487989f834fa3253e85150760f742fe5931715",
+  "license": "Apache-2.0",
+  "copied_at": "2026-10-17",
+  "modified": false,
+  "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
+}

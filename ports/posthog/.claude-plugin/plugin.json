@@ -1,0 +1,21 @@
+{
+  "name": "posthog",
+  "displayName": "PostHog",
+  "version": "1.0.0",
+  "description": "PostHog product analytics, feature flags, experiments, error tracking and surveys through PostHog's hosted MCP server, with a skill on how to use it.",
+  "author": {
+    "name": "PostHog Inc.",
+    "url": "https://posthog.com"
+  },
+  "homepage": "https://posthog.com/docs",
+  "repository": "https://github.com/openai/plugins",
+  "license": "MIT",
+  "keywords": [
+    "posthog",
+    "analytics",
+    "product-analytics",
+    "feature-flags",
+    "experiments",
+    "error-tracking"
+  ]
+}

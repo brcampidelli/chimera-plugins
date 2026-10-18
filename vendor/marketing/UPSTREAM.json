@@ -1,0 +1,16 @@
+{
+  "repo": "anthropics/knowledge-work-plugins",
+  "path": "marketing",
+  "sha": "33eeda1e8fd856455b05479d13a0f85b5f803744",
+  "tree_sha": "a48d8b0217587c5ee1177edcd016c8fc38633b74",
+  "license": "Apache-2.0",
+  "copied_at": "2026-10-17",
+  "modified": true,
+  "changes": [
+    ".mcp.json: removed servers whose 'url' is an empty string (Chimera and Claude Code refuse a server with neither command nor url)",
+    ".mcp.json: removed 'slack' — its entry carries Anthropic's registered OAuth client id, which is not ours to reuse",
+    ".mcp.json: removed servers whose endpoint path is specific to Anthropic ('/anthropic'), not verified for other clients",
+    "CONNECTORS.md and skills still mention the removed connectors; they are documentation, unchanged"
+  ],
+  "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
+}

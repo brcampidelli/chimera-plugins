@@ -1,0 +1,31 @@
+{
+  "id": "whatsapp-cloud",
+  "displayName": "WhatsApp Cloud API",
+  "category": "email-messaging",
+  "secondary": [
+    "apis-integrations",
+    "marketing"
+  ],
+  "tags": [
+    "whatsapp",
+    "meta",
+    "webhooks",
+    "lgpd"
+  ],
+  "featured": true,
+  "license": "Apache-2.0",
+  "origin": "ours",
+  "capability": "instructions only",
+  "capabilities": [
+    "instructions only"
+  ],
+  "runs": "instructions only (skills/commands/agents in Markdown)",
+  "components": {
+    "skills": 4,
+    "commands": 1,
+    "agents": 0,
+    "mcp_servers": [],
+    "hooks": false,
+    "script_files": 0
+  }
+}

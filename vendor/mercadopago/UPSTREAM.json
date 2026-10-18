@@ -1,0 +1,13 @@
+{
+  "repo": "mercadopago/mercadopago-claude-marketplace",
+  "path": "plugins/mercadopago",
+  "sha": "9815b7fe3769783ddafce0745d113351c8e69ab0",
+  "tree_sha": "f397def00bc7a2c77d429eeea3de455e0a4bf7fa",
+  "license": "Apache-2.0",
+  "copied_at": "2026-10-17",
+  "modified": false,
+  "added_files": [
+    "LICENSE and NOTICE (copied from the repository root; Apache-2.0 §4(d) requires the NOTICE to travel)"
+  ],
+  "verified": "every copied file's git blob sha matched the GitHub tree API at this commit when copied"
+}

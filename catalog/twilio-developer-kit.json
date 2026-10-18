@@ -1,0 +1,39 @@
+{
+  "id": "twilio-developer-kit",
+  "displayName": "twilio-developer-kit",
+  "category": "email-messaging",
+  "secondary": [
+    "apis-integrations"
+  ],
+  "tags": [
+    "sms",
+    "whatsapp",
+    "voice",
+    "sendgrid"
+  ],
+  "featured": false,
+  "license": "MIT",
+  "origin": "pinned-github",
+  "capability": "network",
+  "capabilities": [
+    "network"
+  ],
+  "runs": "1 remote MCP server(s), added only on request: mcp.twilio.com",
+  "components": {
+    "skills": 57,
+    "commands": 0,
+    "agents": 0,
+    "mcp_servers": [
+      "twilio-docs"
+    ],
+    "hooks": false,
+    "script_files": 0
+  },
+  "upstream": "twilio/ai",
+  "stars": {
+    "repo": "twilio/ai",
+    "count": 37,
+    "read_at": "2026-10-17",
+    "scope": "plugin-repository"
+  }
+}

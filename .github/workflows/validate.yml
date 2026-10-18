@@ -1,0 +1,46 @@
+# Validates every pull request. Runs on `pull_request` only: never `pull_request_target`, no
+# secrets, read-only token. Actions are pinned to full commit SHAs (a tag can be moved upstream).
+name: validate
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Repository policy (licenses, pinned sources, catalog, reviews, text rules)
+        run: python -I scripts/check.py
+
+      - name: Install Chimera (pinned)
+        # 0.69.0 is the first release with `chimera plugin validate`.
+        run: python -m pip install --disable-pip-version-check "chimera-agent==0.69.0"
+
+      - name: chimera plugin validate (marketplace and every plugin folder)
+        run: |
+          set -euo pipefail
+          chimera plugin validate .
+          for dir in plugins/*/ vendor/*/ ports/*/; do
+            [ -d "$dir" ] || continue
+            echo "::group::$dir"
+            chimera plugin validate "$dir"
+            echo "::endgroup::"
+          done
